@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salão da Patrícia - Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .destaque {
+            background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .destaque h2 {
+            font-size: 48px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #e91e63;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .botao-whatsapp {
+            background: #25D366;
+            margin-left: 10px;
+        }
+
+        .servicos {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .servicos h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .lista-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .item-servico {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .item-servico img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item-servico h4 {
+            margin: 15px 0 10px;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: none;
+            background: #25D366;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Salão da Patrícia</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="destaque">
+    <div>
+        <h2>Realce sua beleza com nossos especialistas</h2>
+        <a href="#contato" class="botao">Agendar Agora</a>
+        <a href="https://wa.me/5503195737076" class="botao botao-whatsapp" target="_blank">
+            WhatsApp
+        </a>
+    </div>
+</section>
+
+<section class="servicos" id="servicos">
+    <h3>Nossos Serviços</h3>
+
+    <div class="lista-servicos">
+
+        <div class="item-servico">
+            <img src="img/IMG-20260115-WA0019.jpg" alt="Corte de cabelo">
+            <h4>Corte de Cabelo</h4>
+            <p>Profissionais experientes para transformar seu visual.</p>
+        </div>
+
+        <div class="item-servico">
+            <img src="img/IMG-20260115-WA0023.jpg" alt="Manicure e pedicure">
+            <h4>Manicure & Pedicure</h4>
+            <p>Cuidados completos para mãos e pés.</p>
+        </div>
+
+        <div class="item-servico">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2" alt="Maquiagem profissional">
+            <h4>Maquiagem</h4>
+            <p>Maquiagens profissionais para todas as ocasiões.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contato">
+    <p>© 2025 Salão da Patrícia - Todos os direitos reservados</p>
+    <p>Contato: +55 31 9573-7076 | MG - Rua Joaquim Teixeira Dias, 420</p>
+
+    <a href="https://wa.me/5503195737076" target="_blank">
+        Falar no WhatsApp
+    </a>
+</footer>
+
+</body>
+</html>
+
